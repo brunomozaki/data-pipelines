@@ -7,9 +7,8 @@ import configparser
 parser = configparser.ConfigParser()
 parser.read('pipeline.conf')
 dbname = parser.get('postgres_config', 'database')
-user = parser.get('postgres_config', 'user_name')
+user = parser.get('postgres_config', 'username')
 password = parser.get('postgres_config', 'password')
-dbname = parser.get('postgres_config', 'database')
 host = parser.get('postgres_config', 'host')
 port = parser.get('postgres_config', 'port')
 
