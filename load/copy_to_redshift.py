@@ -40,3 +40,5 @@ cur.execute(sql, (file_path, role_string))
 cur.close()
 conn.commit()
 conn.close()
+
+# make sure the VPC security group accepts your ip otherwise the script won't work
